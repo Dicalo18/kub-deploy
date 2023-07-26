@@ -1,11 +1,4 @@
-provider "google" {
-    project= "deployment-dev-394008"
-    credentials = "${file("credentials1.json")}"
-    region= "us-central1"
-    zone="us-central1-c"
 
-
-}
 resource "google_compute_instance" "default" {
   name         = "test"
   machine_type = "e2-medium"
